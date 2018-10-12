@@ -57,6 +57,7 @@ module Prpr
         end
 
         def config
+          p repository_name
           @config ||= Config::Github.new(repository_name, branch: 'DEVOPS-155')
         end
 
