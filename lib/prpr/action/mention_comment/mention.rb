@@ -70,7 +70,7 @@ module Prpr
         end
 
         def repository_name
-          event.repository.full_name
+          ENV['MEMBER_REPO_NAME']
         end
       end
     end
