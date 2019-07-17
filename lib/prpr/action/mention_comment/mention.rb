@@ -57,9 +57,6 @@ module Prpr
         end
 
         def config
-          p repository_name
-          p "### event.repository.full_name"
-          p event.repository.full_name
           @config ||= Config::Github.new(repository_name)
         end
 
